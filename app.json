@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "ShinyTinyTalks",
+    "slug": "ShinyTinyTalks",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.yasuridevindi.ShinyTinyTalks",
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Allow this app to access your microphone for recording speech."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "9de3e62f-4597-4ea9-8c2e-341d9391978c"
+      }
+    }
+  }
+}
